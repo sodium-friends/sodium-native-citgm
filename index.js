@@ -1,1 +1,1 @@
-require('sodium-native').randombytes_buf(Buffer.from(32))
+require('sodium-native').randombytes_buf(Buffer.alloc(32))
