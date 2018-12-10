@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - node
+  - lts/*
+  - '11'
+  - '10'
+  - '8'
+  - '6'
+  - '4'
+
+os:
+  - osx
+  - linux
+  - windows
+
+install: npm install --ignore-scripts

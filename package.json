@@ -1,0 +1,22 @@
+{
+  "name": "sodium-native-citgm",
+  "version": "1.0.0",
+  "description": "Canary in the Gold Mine fro sodium-native",
+  "main": "index.js",
+  "dependencies": {
+    "sodium-native": "*"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/sodium-native-citgm.git"
+  },
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/sodium-native-citgm/issues"
+  },
+  "homepage": "https://github.com/emilbayes/sodium-native-citgm#readme"
+}
