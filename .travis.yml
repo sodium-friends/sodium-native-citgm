@@ -14,4 +14,21 @@ os:
   - linux
   - windows
 
+matrix:
+  include:
+    - os: windows
+      node_js: 'node/x86'
+    - os: windows
+      node_js: 'lts/*/x86'
+    - os: windows
+      node_js: '11/x86'
+    - os: windows
+      node_js: '10/x86'
+    - os: windows
+      node_js: '8/x86'
+    - os: windows
+      node_js: '6/x86'
+    - os: windows
+      node_js: '4/x86'
+
 install: npm install --ignore-scripts
