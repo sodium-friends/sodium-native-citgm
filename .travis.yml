@@ -7,7 +7,6 @@ node_js:
   - '10'
   - '8'
   - '6'
-  - '4'
 
 os:
   - osx
@@ -28,7 +27,5 @@ matrix:
       node_js: '8/x86'
     - os: windows
       node_js: '6/x86'
-    - os: windows
-      node_js: '4/x86'
 
 install: npm install --ignore-scripts
