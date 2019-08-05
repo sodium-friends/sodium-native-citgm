@@ -65,4 +65,4 @@ matrix:
       before_install: npm install electron@6
       test: node_modules/.bin/electron .
 
-install: npm install --ignore-scripts
+install: npm install --ignore-scripts && npm install --ignore-scripts node-gyp-build
