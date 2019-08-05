@@ -28,4 +28,32 @@ matrix:
     - os: windows
       node_js: '6/x86'
 
+    - os: windows
+      before_script: npm install electron@4
+      test: node_modules/.bin/electron .
+    - os: linux
+      before_script: npm install electron@4
+      test: node_modules/.bin/electron .
+    - os: osx
+      before_script: npm install electron@4
+      test: node_modules/.bin/electron .
+    - os: windows
+      before_script: npm install electron@5
+      test: node_modules/.bin/electron .
+    - os: linux
+      before_script: npm install electron@5
+      test: node_modules/.bin/electron .
+    - os: osx
+      before_script: npm install electron@5
+      test: node_modules/.bin/electron .
+    - os: windows
+      before_script: npm install electron@6
+      test: node_modules/.bin/electron .
+    - os: linux
+      before_script: npm install electron@6
+      test: node_modules/.bin/electron .
+    - os: osx
+      before_script: npm install electron@6
+      test: node_modules/.bin/electron .
+
 install: npm install --ignore-scripts
