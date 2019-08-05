@@ -30,39 +30,39 @@ matrix:
 
     - os: windows
       env: TEST_NAME="windows-electron@4"
-      before_script: npm install electron@4
+      before_install: npm install electron@4
       test: node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@4"
-      before_script: npm install electron@4
+      before_install: npm install electron@4
       test: node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@4"
-      before_script: npm install electron@4
+      before_install: npm install electron@4
       test: node_modules/.bin/electron .
     - os: windows
       env: TEST_NAME="windows-electron@5"
-      before_script: npm install electron@5
+      before_install: npm install electron@5
       test: node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@5"
-      before_script: npm install electron@5
+      before_install: npm install electron@5
       test: node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@5"
-      before_script: npm install electron@5
+      before_install: npm install electron@5
       test: node_modules/.bin/electron .
     - os: windows
       env: TEST_NAME="windows-electron@6"
-      before_script: npm install electron@6
+      before_install: npm install electron@6
       test: node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@6"
-      before_script: npm install electron@6
+      before_install: npm install electron@6
       test: node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@6"
-      before_script: npm install electron@6
+      before_install: npm install electron@6
       test: node_modules/.bin/electron .
 
 install: npm install --ignore-scripts
