@@ -13,6 +13,10 @@ os:
   - linux
   - windows
 
+cache:
+  npm: false
+install: npm install --ignore-scripts
+
 matrix:
   include:
     - os: windows
@@ -64,5 +68,3 @@ matrix:
       env: TEST_NAME="osx-electron@6"
       before_install: npm install electron@6
       script: node_modules/.bin/electron .
-
-install: npm install --ignore-scripts
