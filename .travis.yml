@@ -35,36 +35,54 @@ matrix:
     - os: windows
       env: TEST_NAME="windows-electron@4"
       before_install: npm install electron@4
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@4"
       before_install: npm install electron@4
-      script: node_modules/.bin/electron .
+      script:
+        - xvfb-run node_modules/.bin/electron --version
+        - xvfb-run node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@4"
       before_install: npm install electron@4
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
     - os: windows
       env: TEST_NAME="windows-electron@5"
       before_install: npm install electron@5
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@5"
       before_install: npm install electron@5
-      script: node_modules/.bin/electron .
+      script:
+        - xvfb-run node_modules/.bin/electron --version
+        - xvfb-run node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@5"
       before_install: npm install electron@5
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
     - os: windows
       env: TEST_NAME="windows-electron@6"
       before_install: npm install electron@6
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
     - os: linux
       env: TEST_NAME="linux-electron@6"
       before_install: npm install electron@6
-      script: node_modules/.bin/electron .
+      script:
+        - xvfb-run node_modules/.bin/electron --version
+        - xvfb-run node_modules/.bin/electron .
     - os: osx
       env: TEST_NAME="osx-electron@6"
       before_install: npm install electron@6
-      script: node_modules/.bin/electron .
+      script:
+        - node_modules/.bin/electron --version
+        - node_modules/.bin/electron .
