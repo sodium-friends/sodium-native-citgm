@@ -4,7 +4,7 @@
   "description": "Canary in the Gold Mine fro sodium-native",
   "main": "index.js",
   "dependencies": {
-    "sodium-native": "*"
+    "sodium-native": "nightly"
   },
   "scripts": {
     "test": "node index.js"
