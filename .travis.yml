@@ -40,8 +40,8 @@ matrix:
       env: TEST_NAME="windows-electron@4"
       before_install: npm install electron@4
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron@4 --version
+        - npx electron@4 .
     - os: linux
       env: TEST_NAME="linux-electron@4"
       before_install: npm install electron@4
