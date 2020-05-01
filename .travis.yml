@@ -3,10 +3,10 @@ language: node_js
 node_js:
   - node
   - lts/*
+  - '13'
+  - '12'
   - '11'
   - '10'
-  - '8'
-  - '6'
 
 os:
   - osx
@@ -28,13 +28,13 @@ matrix:
     - os: windows
       node_js: 'lts/*/x86'
     - os: windows
+      node_js: '13/x86'
+    - os: windows
+      node_js: '12/x86'
+    - os: windows
       node_js: '11/x86'
     - os: windows
       node_js: '10/x86'
-    - os: windows
-      node_js: '8/x86'
-    - os: windows
-      node_js: '6/x86'
 
     - os: windows
       env: TEST_NAME="windows-electron@4"
@@ -87,6 +87,42 @@ matrix:
     - os: osx
       env: TEST_NAME="osx-electron@6"
       before_install: npm install electron@6 npx
+      script:
+        - npx electron --version
+        - npx electron .
+    - os: windows
+      env: TEST_NAME="windows-electron@7"
+      before_install: npm install electron@7 npx
+      script:
+        - npx electron --version
+        - npx electron .
+    - os: linux
+      env: TEST_NAME="linux-electron@7"
+      before_install: npm install electron@7 npx
+      script:
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
+    - os: osx
+      env: TEST_NAME="osx-electron@7"
+      before_install: npm install electron@7 npx
+      script:
+        - npx electron --version
+        - npx electron .
+    - os: windows
+      env: TEST_NAME="windows-electron@8"
+      before_install: npm install electron@8 npx
+      script:
+        - npx electron --version
+        - npx electron .
+    - os: linux
+      env: TEST_NAME="linux-electron@8"
+      before_install: npm install electron@8 npx
+      script:
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
+    - os: osx
+      env: TEST_NAME="osx-electron@8"
+      before_install: npm install electron@8 npx
       script:
         - npx electron --version
         - npx electron .
