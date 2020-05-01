@@ -36,76 +36,75 @@ matrix:
     - os: windows
       node_js: '6/x86'
 
-    # Cannot load electron shared libraries for now?
-    # - os: windows
-    #   env: TEST_NAME="windows-electron@4"
-    #   before_install: npm install electron@4
-    #   script:
-    #     - node_modules/.bin/electron --version
-    #     - node_modules/.bin/electron .
+    - os: windows
+      env: TEST_NAME="windows-electron@4"
+      before_install: npm install electron@4 npx
+      script:
+        - npx electron --version
+        - npx electron .
     - os: linux
       env: TEST_NAME="linux-electron@4"
-      before_install: npm install electron@4
+      before_install: npm install electron@4 npx
       script:
-        - xvfb-run --auto-servernum node_modules/.bin/electron --version
-        - xvfb-run --auto-servernum node_modules/.bin/electron .
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
     - os: osx
       env: TEST_NAME="osx-electron@4"
-      before_install: npm install electron@4
+      before_install: npm install electron@4 npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: windows
       env: TEST_NAME="windows-electron@5"
-      before_install: npm install electron@5
+      before_install: npm install electron@5 npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: linux
       env: TEST_NAME="linux-electron@5"
-      before_install: npm install electron@5
+      before_install: npm install electron@5 npx
       script:
-        - xvfb-run --auto-servernum node_modules/.bin/electron --version
-        - xvfb-run --auto-servernum node_modules/.bin/electron .
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
     - os: osx
       env: TEST_NAME="osx-electron@5"
-      before_install: npm install electron@5
+      before_install: npm install electron@5 npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: windows
       env: TEST_NAME="windows-electron@6"
-      before_install: npm install electron@6
+      before_install: npm install electron@6 npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: linux
       env: TEST_NAME="linux-electron@6"
-      before_install: npm install electron@6
+      before_install: npm install electron@6 npx
       script:
-        - xvfb-run --auto-servernum node_modules/.bin/electron --version
-        - xvfb-run --auto-servernum node_modules/.bin/electron .
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
     - os: osx
       env: TEST_NAME="osx-electron@6"
-      before_install: npm install electron@6
+      before_install: npm install electron@6 npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: windows
       env: TEST_NAME="windows-electron@latest"
-      before_install: npm install electron@latest
+      before_install: npm install electron@latest npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
     - os: linux
       env: TEST_NAME="linux-electron@latest"
-      before_install: npm install electron@latest
+      before_install: npm install electron@latest npx
       script:
-        - xvfb-run --auto-servernum node_modules/.bin/electron --version
-        - xvfb-run --auto-servernum node_modules/.bin/electron .
+        - xvfb-run --auto-servernum npx electron --version
+        - xvfb-run --auto-servernum npx electron .
     - os: osx
       env: TEST_NAME="osx-electron@latest"
-      before_install: npm install electron@latest
+      before_install: npm install electron@latest npx
       script:
-        - node_modules/.bin/electron --version
-        - node_modules/.bin/electron .
+        - npx electron --version
+        - npx electron .
